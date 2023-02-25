@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./STYLE.CSS" />
+    <link rel="stylesheet" href="./reset.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header
+      style="
+        border: 2px solid rgb(44, 36, 36);
+        background-color: rgb(58, 47, 47);
+      "
+    >
+      <nav class="navbar -left">
+        <div class="navbar-left">
+        <p>  <span style="margin-top: 50px;">
+          <a href="#"
+            ><img
+              src="Ans.png"
+              width="40"
+              hight="40"
+              title="
+            "
+          /></a></span>
+          
+            <span style="color: white; font-size: small; padding-left: 20px;">
+              A Pen by freeCodeCamp.org</span>
+              <a href="https://codepen.io/freeCodeCamp/full/VPaoNP"></a>
+              <span style="border: 2px solid  rgb(30, 190, 52) ; background-color: rgb(30, 190, 52)"
+                >+Follow</span
+              >
+            </span><br>
+            <span style="color: snow; font-size: larger; margin-left: 50px;">FCC:Survey Form</span>
+          </p>
+        </div>
+      </nav>
+     
+       
+      <ul class="nav justify-content-end">
+        <li class="nav-item"></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span
+              style="
+                padding-right: 30px;
+                border: 2px solid gray;
+                background-color: grey;
+                font-size: x-large;
+              "
+              >view</span
+            ></a
+          >
+        </li>
+        <li class="nav-item">
+          <span
+            style="
+              padding-right: 30px;
+              margin-left: 20px;
+              border: 2px solid gray;
+              background-color: grey;
+              font-size: x-large;
+            "
+          >
+            <a href="#" style="background-color: rgba(86, 228, 86, 0.918)"
+              >Sign Up</a
+            ></span
+          >
+        </li>
+        <li class="nav-item">
+          <span
+            style="
+              padding-right: 20px;
+              margin-left: 10px;
+
+              padding-top: 10px;
+              border: 2px solid gray;
+              background-color: grey;
+              font-size: x-large;
+            "
+          >
+            <a href="#">log in</a></span
+          >
+        </li>
+      </ul>
+    </header>
+
+    <div class="lhs-section"></div>
+
+    <div class="rhs-section">
+      <div style="color: rgb(79, 145, 79);">
+        <i class="fa-solid fa-bars hamburger-icon" onclick="toggle()"></i>
+      </div>
+
+      <nav id="navigation">
+        <div
+          style="
+            border: 2px solid;
+            margin-right: 1100px;
+            background-color: rgba(240, 240, 76, 0.678);
+          "
+        >
+          <p style="font-size: xx-large">x</p>
+          <p style="text-align: center; margin-top: 10px">Select Test Suite</p>
+          <div
+            style="
+              border: 2px solid rgb(150, 147, 147);
+              background-color: rgb(150, 147, 147);
+            "
+          >
+            survey form
+          </div>
+
+          <div>
+            <p>
+              <span
+                style="
+                  border: 2px solid rgb(56, 54, 54);
+                  background-color: rgb(56, 54, 54);
+                  margin-right: 180px;
+                  font-size: small;
+                  color: snow;
+                "
+              >
+                Run Test</span
+              >
+              <span
+                style="
+                  border: 1px SOLID RED;
+                  background-color: red;
+                  color: red;
+                  margin-left: 100px;
+                  padding-bottom: px;
+                "
+                >a</span
+              >
+              Test(s) Failed
+              <span
+                style="
+                  border: 1px SOLID rgb(111, 204, 58);
+                  background-color: rgb(111, 204, 58);
+                  color: rgb(111, 204, 58);
+                  margin-left: 100px;
+                  padding-bottom: px;
+                "
+                >a</span
+              >
+              Tests Passed
+              <span
+                style="
+                  border: 1px SOLID rgb(250, 216, 22);
+                  background-color: rgb(250, 216, 22);
+                  color: rgb(250, 216, 22);
+                  margin-left: 100px;
+                  padding-bottom: px;
+                "
+                >a</span
+              >
+              Test Executing
+            </p>
+          </div>
+          <div
+            style="
+              border: 2px solid rgb(56, 54, 54);
+              background-color: rgb(56, 54, 54);
+              margin-right: 180px;
+              margin-bottom: 20px;
+              font-size: large;
+              color: snow;
+            "
+          >
+            Tests
+          </div>
+          <div  > <a href="#"> <span style="margin-left: 30px ; color: rgb(15, 11, 7) ; margin-bottom: 5px;">Ask For Help</span></a></div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form">
+          <label id="email" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="main"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form">
+          <label id="number" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form">
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+
+        <div class="form">
+          <p>What is your favorite feature of freeCodeCamp?</p>
+          <select id="most like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="openSource">Open Source</option>
+          </select>
+        </div>
+
+        <div class="form">
+          <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="A"
+              type="checkbox"
+              class="input-checkbox"
+            />Front-end Projects</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="B"
+              type="checkbox"
+              class="input-checkbox"
+            />Back-end Projects</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="C"
+              type="checkbox"
+              class="checkbox"
+            />Data Visualization</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="D"
+              type="checkbox"
+              class="checkbox"
+            />Challenges</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="E"
+              type="checkbox"
+              class="checkbox"
+            />Open Source Community</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="F"
+              type="checkbox"
+              class="checkbox"
+            />Gitter help rooms</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="G"
+              type="checkbox"
+              class="checkbox"
+            />Videos</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="H"
+              type="checkbox"
+              class="checkbox"
+            />City Meetups</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="I"
+              type="checkbox"
+              class="checkbox"
+            />Wiki</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="J"
+              type="checkbox"
+              class="checkbox"
+            />Forum</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="K"
+              type="checkbox"
+              class="checkbox"
+            />Additional Courses</label
+          >
+        </div>
+
+        <div class="form">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    >
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function toggle() {
+        const nav = document.getElementById("navigation");
+        nav.style.display = nav.style.display === "block" ? "none" : "block";
+      }
+    </script>
+  </body>
+</html>
